@@ -36,7 +36,7 @@ const Index = () => {
         <Box display="flex" alignItems="center">
           <FaHackerNews size="2em" color="brand.900" />
           <Heading as="h1" size="lg" ml={2} color="brand.900">
-            Hacker News Top Stories
+            Hacker News Top Stories (EDITED)
           </Heading>
         </Box>
         {loading ? (
