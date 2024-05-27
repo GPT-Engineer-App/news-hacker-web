@@ -34,8 +34,8 @@ const Index = () => {
     <Container centerContent maxW="container.md" py={8}>
       <VStack spacing={4} align="stretch">
         <Box display="flex" alignItems="center">
-          <FaHackerNews size="2em" />
-          <Heading as="h1" size="lg" ml={2}>
+          <FaHackerNews size="2em" color="brand.900" />
+          <Heading as="h1" size="lg" ml={2} color="brand.900">
             Hacker News Top Stories
           </Heading>
         </Box>
@@ -44,7 +44,7 @@ const Index = () => {
         ) : (
           stories.map((story) => (
             <Box key={story.id} p={4} borderWidth="1px" borderRadius="md" boxShadow="sm">
-              <Link href={story.url} isExternal fontSize="xl" fontWeight="bold">
+              <Link href={story.url} isExternal fontSize="xl" fontWeight="bold" color="brand.800">
                 {story.title}
               </Link>
               <Text fontSize="sm" color="gray.500">
